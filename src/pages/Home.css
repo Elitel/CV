@@ -1,0 +1,14 @@
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ribbon {
+    width: 100vw;
+    height: 40vh;
+    background-color: beige;
+}

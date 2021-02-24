@@ -1,21 +1,32 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import "./Navigation.css";
+import i18n from '../../i18n';
 
-const Navigation = props => {
+import { withNamespaces } from 'react-i18next';
+
+function Navigation ({ t }) {
+  
+  const changeLanguage = () => {
+    let lang = document.getElementById("lang").textContent;
+    i18n.changeLanguage(lang.toLocaleLowerCase());
+    document.getElementById("lang").textContent = lang === 'RU' ? 'EN' : 'RU';
+  }
+
   return (
     <div className="nav">
       <div className="navbar">
         <ul>
-          <li className="nav-item">EN</li>
-          <li className="nav-item">1</li>
-          <li className="nav-item">2</li>
-          <li className="nav-item">3</li>
-          <li className="nav-item">4</li>
-          <li className="nav-item">5</li>
+          <li className="nav-item" id="lang" onClick={() => changeLanguage()}>RU</li>
+          <li className="nav-item"><Link to="/">{t('Home')}</Link></li>
+          <li className="nav-item"><Link to="/about">About</Link></li>
+          <li className="nav-item"><Link to="/education">Education</Link></li>
+          <li className="nav-item"><Link to="/skills">Skills</Link></li>
+          <li className="nav-item"><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
     </div>
   );
 };
 
-export default Navigation;
+export default withNamespaces()(Navigation);

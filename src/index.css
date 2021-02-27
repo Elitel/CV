@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@font-face {
+  font-family: Antapani; 
+  src: url(./assets/fonts/Antapani-ExtraBold.otf) 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: no_name_37; 
+  src: url(./assets/fonts/no_name_37_Light.otf) 
 }
+
+
+body {
+  margin: 0;
+  font-family: no_name_37;
+}
+

@@ -18,11 +18,11 @@ function Navigation ({ t }) {
       <div className="navbar">
         <ul>
           <li className="nav-item" id="lang" onClick={() => changeLanguage()}>RU</li>
-          <li className="nav-item"><Link to="/">{t('Home')}</Link></li>
-          <li className="nav-item"><Link to="/about">About</Link></li>
-          <li className="nav-item"><Link to="/education">Education</Link></li>
-          <li className="nav-item"><Link to="/skills">Skills</Link></li>
-          <li className="nav-item"><Link to="/contact">Contact</Link></li>
+          <li className="nav-item"><Link to="/"><span class="material-icons">home</span></Link></li>
+          <li className="nav-item"><Link to="/about"><span class="material-icons">person</span></Link></li>
+          <li className="nav-item"><Link to="/education"><span class="material-icons">school</span></Link></li>
+          <li className="nav-item"><Link to="/skills"><span class="material-icons">star</span></Link></li>
+          <li className="nav-item"><Link to="/contact"><span class="material-icons">drafts</span></Link></li>
         </ul>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import {AnimatePresence, motion} from 'framer-motion';
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -15,9 +16,8 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-        <Navigation />
-
       <div className="App">
+        <AnimatePresence>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
@@ -25,6 +25,7 @@ function App() {
           <Route path="/skills" component={Skills} />
           <Route path="/contact" component={Contact} />
         </Switch>
+        </AnimatePresence>
       </div>
     </BrowserRouter>
 

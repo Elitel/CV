@@ -52,7 +52,7 @@
 @media (max-width: 650px) {
 
     .fullscreen {
-        height: 100vh;
+        height:  calc(var(--vh, 1vh) * 100);
         display: flex;
         align-items: flex-start;
         flex-direction: column;

@@ -44,7 +44,7 @@ ul {
 }
 @media (max-width: 650px) {
   .nav {
-    height: auto;
+    height: 4em;
     width: 100vw;
   }
   .nav-item {

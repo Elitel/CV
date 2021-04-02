@@ -9,6 +9,10 @@
   src: url(./assets/fonts/no_name_37_Light.otf) 
 }
 
+@font-face {
+  font-family: NebulosaBlack; 
+  src: url(./assets/fonts/NebulosaBlack.otf) 
+}
 
 body {
   margin: 0;

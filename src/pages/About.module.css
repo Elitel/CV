@@ -1,0 +1,41 @@
+.info {
+    float: left;
+    width: calc(100% - 6em);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.title {
+    margin: 20vh 20vh auto auto;
+    text-align: right;
+}
+
+.title h1, p, h2 {
+    display: inline;
+    font-family: Antapani;
+}
+
+.title h1{
+    color: rgba(195, 87, 24, 0.81);
+    font-size: 2.5em;
+}
+
+.title p {
+    line-height: 1.7em;
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 1.3em;
+    font-family: NebulosaBlack;
+}
+
+.about {
+    
+    margin: 10vh 15vw;
+}
+
+.about p {
+    color: #AFAFAF;
+    font-size: 16px;
+    font-family: no_name_37;
+}
+

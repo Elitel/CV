@@ -1,41 +1,97 @@
 .info {
-    float: left;
-    width: calc(100% - 6em);
-    /* display: flex;
+  float: left;
+  width: calc(100% - 6em);
+  /* display: flex;
     align-items: center;
     justify-content: center; */
 }
 
 .title {
-    margin: 20vh 20vh auto auto;
-    text-align: right;
+  margin: 20vh 20vh auto auto;
+  text-align: right;
 }
 
-.title h1, p, h2 {
-    display: inline;
-    font-family: Antapani;
+.title h1,
+p,
+h2 {
+  display: inline;
+  font-family: Antapani;
 }
 
-.title h1{
-    color: rgba(195, 87, 24, 0.81);
-    font-size: 2.5em;
+.title h1 {
+  color: rgba(195, 87, 24, 0.81);
+  font-size: 2.5em;
 }
 
 .title p {
-    line-height: 1.7em;
-    color: rgba(255, 255, 255, 0.25);
-    font-size: 1.3em;
-    font-family: NebulosaBlack;
+  line-height: 1.7em;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 1.3em;
+  font-family: NebulosaBlack;
 }
 
 .about {
-    
-    margin: 10vh 15vw;
+display: flex;
+  margin: 10vh 15vw;
+}
+
+.about .photo {
+  width: 20%;
+}
+
+.about .text {
+  width: 80%;
 }
 
 .about p {
-    color: #AFAFAF;
-    font-size: 16px;
-    font-family: no_name_37;
+  color: #afafaf;
+  font-size: 16px;
+  font-family: no_name_37;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
+@media (max-width: 650px) {
+  .info {
+    float: left;
+    width: 100%;
+  }
+  .title {
+    margin: 5vh 5vw auto auto;
+    text-align: right;
+  }
+  .title h1 {
+    font-size: 1.7em;
+  }
+
+  .title p {
+    font-size: 1.2em;
+  }
+
+  .about {
+    margin: 5vh 10vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .info {
+    float: left;
+    width: 100%;
+  }
+  .title {
+    margin: 7vh 5vw auto auto;
+    text-align: right;
+  }
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .title p {
+    font-size: 1em;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+}

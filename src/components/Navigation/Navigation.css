@@ -40,11 +40,11 @@ ul {
 }
 #lang {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   color:  #C55618;
 }
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .nav {
     height: 4em;
     width: 100vw;
@@ -56,13 +56,19 @@ ul {
 
   ul {
     padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   .navbar {
     display: flex;
   }
   .nav-item:first-child {
     padding-right: 70px;
+    padding-bottom: 0px;
+    display: block;
   }
+
 }
 
 .material-icons:hover{

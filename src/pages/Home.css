@@ -29,7 +29,7 @@ h2 {
 .ribbon h1,
 h2 {
   color: white;
-  font-size: 2.5em;
+  font-size: 2.4em;
 }
 
 .ribbon h1,
@@ -70,7 +70,7 @@ h2 {
   background-color: rgba(197, 88, 24, 0.25);
 } */
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .fullscreen {
     height: calc(var(--vh, 1vh) * 100);
     display: flex;
@@ -115,7 +115,29 @@ h2 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+  .ribbon h1,
+  h2 {
+    line-height: 1.6em;
+    font-size: 1.6em;
+  }
+
+  .ribbon h2 {
+    font-size: 1em;
+  }
+
+  .ribbon p {
+    line-height: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 0.9em;
+  }
+
+  .ribbon p.tag {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 375px) {
   .ribbon h1,
   h2 {
     line-height: 1.6em;

@@ -31,7 +31,7 @@ h2 {
 }
 
 .about {
-display: flex;
+  display: flex;
   margin: 10vh 15vw;
 }
 
@@ -52,7 +52,23 @@ display: flex;
   margin-bottom: 1em;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
+  .about {
+    float: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10vh 20vw;
+  }
+
+  .about .photo {
+    width: 100%;
+  }
+
+  .about .text {
+    width: 100%;
+  }
+
   .info {
     float: left;
     width: 100%;
@@ -68,13 +84,9 @@ display: flex;
   .title p {
     font-size: 1.2em;
   }
-
-  .about {
-    margin: 5vh 10vw;
-  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .info {
     float: left;
     width: 100%;
